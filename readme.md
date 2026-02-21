@@ -1,8 +1,8 @@
-# Alpine Linux Deskop on X1 Carbon Gen 6
-This is how I've setup my x1c6 with Alpine Linux. I was using win10 which was decent but win11 drove me nuts (slow + ads). So I decided to try something different, here it is.
+# Alpine on X1 Carbon Gen 6
+This is how I setup my x1c6 with alpine (3.23) linux + the gnome desktop.
 
 ## Install
-- download the alpine std x64 iso (3.23)
+- download [alpine std x64](https://alpinelinux.org/downloads/) iso
 - write the iso to a usb (usb drive is `/dev/sdb`): `dd if=alpine.iso of=/dev/sdb bs=1M`
 - reboot and press F12 to enter the boot menu
 - select the usb drive and press enter
