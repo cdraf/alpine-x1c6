@@ -96,8 +96,11 @@ reboot
 git clone https://github.com/kitsunyan/intel-undervolt.git
 cd intel-undervolt && ./configure --enable-openrc && make
 doas make install
-# edit CPU/GPU/CPU Cache to -100 in /etc/intel-undervolt.conf
+# set CPU/GPU/CPU Cache to -100 in /etc/intel-undervolt.conf
 doas intel-undervolt apply
+rc-update add intel-undervolt-loop default
+rc-service intel-undervolt-loop restart
+reboot
 ```
 ### Have nautilus always show the full file path
 ```
