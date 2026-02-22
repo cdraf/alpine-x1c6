@@ -4,8 +4,8 @@ This is how I setup my x1c6 with alpine (3.23) linux + the gnome desktop.
 ![desktop screenshot](img/x1c6_screenshot.png)
 
 ## Install
-- download [alpine std x64](https://alpinelinux.org/downloads/) iso
-- write the iso to a usb (usb drive is `/dev/sdb`): `dd if=alpine.iso of=/dev/sdb bs=1M`
+- download the [alpine std x64](https://alpinelinux.org/downloads/) iso
+- write the iso to a usb: `dd if=alpine-standard-3.23.3-x86_64.iso of=/dev/sdb bs=1M`
 - reboot and press F12 to enter the boot menu
 - select the usb drive and press enter
 
