@@ -94,7 +94,7 @@ reboot
 ### Undervolt the cpu for longer battery life
 ```
 git clone https://github.com/kitsunyan/intel-undervolt.git
-cd intel-undervolt && ./configure && make
+cd intel-undervolt && ./configure --enable-openrc && make
 doas make install
 # edit CPU/GPU/CPU Cache to -100 in /etc/intel-undervolt.conf
 doas intel-undervolt apply
